@@ -221,6 +221,8 @@ void *acceptor_thread(void *arg)
 
 int main(int argc, char **argv)
 {
+    setlinebuf(stdout);
+    
     int mysock = -1;
 
     if (argc != 3) {
